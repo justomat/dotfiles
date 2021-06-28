@@ -14,4 +14,5 @@
 #     - ~/.vim/undo-history
 
 - shell:
+  - [touch ~/.hushlogin] # supress last login info
   - [git submodule update --init --recursive, Installing submodules]
