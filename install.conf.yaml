@@ -6,6 +6,13 @@
 
 - link:
     ~/.config/brewfile/Brewfile: Brewfile
+
+    # Git:
+    ~/.gitconfig: git/config
+    ~/.gitignore: git/ignore
+    ~/.gitattributes: git/attributes
+
+
     # ~/.vim: vim
     # ~/.vimrc: vimrc
 
