@@ -15,10 +15,17 @@
 
     # ~/.vim: vim
     # ~/.vimrc: vimrc
+- shell:
+    - description: install homebrew
+      command: echo | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+      stdout: true
+      stdin: true
 
-# - create:
-#     - ~/downloads
-#     - ~/.vim/undo-history
+- brewfile:
+    file: Brewfile
+    stdout: true
+    stderr: true
+    include: ['tap', 'brew', 'cask', 'mas']
 
 - shell:
   - [touch ~/.hushlogin] # supress last login info
