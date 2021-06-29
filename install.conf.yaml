@@ -12,6 +12,8 @@
     ~/.gitignore: git/ignore
     ~/.gitattributes: git/attributes
 
+    # Tools:
+    ~/.config/iterm-settings: config/iterm-settings
 
     # ~/.vim: vim
     # ~/.vimrc: vimrc
