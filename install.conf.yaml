@@ -8,9 +8,10 @@
     ~/.config/brewfile/Brewfile: Brewfile
 
     # Git:
-    ~/.gitconfig: git/config
-    ~/.gitignore: git/ignore
-    ~/.gitattributes: git/attributes
+    ~/:
+      glob: true
+      path: git/*
+      prefix: '.git'
 
     # Tools:
     ~/.config/iterm-settings: config/iterm-settings
