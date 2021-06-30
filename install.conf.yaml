@@ -25,7 +25,10 @@
     # ~/.vimrc: vimrc
 - shell:
     - description: install homebrew
-      command: echo | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+      command: >
+        if [[ $(command -v brew) == "" ]]; then
+          echo | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
+        fi
       stdout: true
       stdin: true
 
