@@ -1,0 +1,6 @@
+
+PATH=$PATH:/usr/local/bin
+
+
+# asdf (node, yarn, ruby)
+. $(brew --prefix asdf)/asdf.sh

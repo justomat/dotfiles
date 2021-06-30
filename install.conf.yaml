@@ -12,6 +12,10 @@
 - link:
     ~/.config/brewfile/Brewfile: Brewfile
 
+    # Terminal
+    ~/.zshenv: zsh/env
+    ~/.zshrc: zsh/rc
+
     # Git:
     ~/:
       glob: true
@@ -37,6 +41,22 @@
     stdout: true
     stderr: true
     include: ['tap', 'brew', 'cask', 'mas']
+
+- asdf:
+    - plugin: nodejs
+      url: https://github.com/asdf-vm/asdf-nodejs.git
+      global: lts
+      versions:
+        - lts
+        - latest
+    - plugin: yarn
+      url: https://github.com/twuni/asdf-yarn
+      global: latest
+      versions: [latest]
+    - plugin: ruby
+      url: https://github.com/asdf-vm/asdf-ruby.git
+      global: latest
+      versions: [latest]
 
 - shell:
     - [touch ~/.hushlogin] # supress last login info
