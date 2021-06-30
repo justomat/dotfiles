@@ -1,13 +1,21 @@
 - defaults:
     stdin: false
     link:
+      create: true
       relink: true
 
 - clean: ['~']
 
+- create:
+    ~/.ssh:
+      mode: 0700
+    ~/src:
 - shell:
-    - mkdir ~/.ssh || touch ~/.ssh/known_hosts
-    - [ssh-keyscan -H github.com >> ~/.ssh/known_hosts, adding github to known hosts]
+    - touch ~/.ssh/known_hosts
+    - [
+        ssh-keyscan -H github.com >> ~/.ssh/known_hosts,
+        adding github to known hosts,
+      ]
 
 - link:
     ~/.config/brewfile/Brewfile: Brewfile
@@ -25,8 +33,6 @@
     # Tools:
     ~/.config/iterm-settings: config/iterm-settings
 
-    # ~/.vim: vim
-    # ~/.vimrc: vimrc
 - shell:
     - description: install homebrew
       command: >
@@ -65,5 +71,5 @@
         [ -f "$HOME/.ssh/id_rsa" ] ||
         ssh-keygen -f "$HOME/.ssh/id_rsa" -qt rsa -b 4096 -N ""
         -C $(git config --global --get user.email)
-    - [sudo chsh -s $(which zsh), Making zsh the default shell]
+    - [sudo chsh -s $(which zsh) $(whoami), Making zsh the default shell]
     - [git submodule update --init --recursive, Installing submodules]
