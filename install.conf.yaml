@@ -1,4 +1,5 @@
 - defaults:
+    stdin: false
     link:
       relink: true
 
