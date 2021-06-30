@@ -1,0 +1,6 @@
+{
+  "files.exclude": {
+    "dotbot-*/": true,
+    "dotbot/": true
+  }
+}
