@@ -36,5 +36,11 @@
     include: ['tap', 'brew', 'cask', 'mas']
 
 - shell:
-  - [touch ~/.hushlogin] # supress last login info
-  - [git submodule update --init --recursive, Installing submodules]
+    - [touch ~/.hushlogin] # supress last login info
+    - description: generate ssh key if not exists
+      command: >
+        [ -f "$HOME/.ssh/id_rsa" ] ||
+        ssh-keygen -f "$HOME/.ssh/id_rsa" -qt rsa -b 4096 -N ""
+        -C $(git config --global --get user.email)
+    - [sudo chsh -s $(which zsh), Making zsh the default shell]
+    - [git submodule update --init --recursive, Installing submodules]
