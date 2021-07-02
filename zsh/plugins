@@ -32,8 +32,8 @@ zinit pack for dircolors-material
 zinit light-mode for zinit-zsh/z-a-meta-plugins
 zinit for annexes
 
-zinit lucid is-snippet for \
-    svn silent nocompile PZTM::archive \
+zinit lucid is-snippet for svn silent nocompile \
+    PZTM::archive \
     PZTM::directory
 
 zinit wait"1" lucid from"gh-r" as"null" for \
