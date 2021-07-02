@@ -6,6 +6,7 @@
   email = contact@geraldisutanto.com
 [diff]
 	algorithm = patience
+  colorMoved = default
 
 # Enforce SSH
 [url "ssh://git@github.com/"]
@@ -14,6 +15,73 @@
   insteadOf = https://gitlab.com/
 [url "ssh://git@bitbucket.org/"]
   insteadOf = https://bitbucket.org/
+
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+
+[interactive]
+    diffFilter = delta --color-only
+
+[delta]
+    features = side-by-side calochortus-lyallii
+    whitespace-error-style = 22 reverse
+
+[delta "coracias-caudatus"]
+    # author: https://github.com/clnoll
+    commit-decoration-style = ol "#7536ff"
+    commit-style = "#200078"
+    file-decoration-style = none
+    file-style = omit
+    hunk-header-decoration-style = "#cfd6ff" ul
+    hunk-header-file-style = "#858dff"
+    hunk-header-line-number-style = "#7536ff"
+    hunk-header-style = file line-number syntax
+    light = true
+    line-numbers = true
+    line-numbers-left-format = "{nm:>4} ."
+    line-numbers-left-style = "#e3ab02"
+    line-numbers-minus-style = "#ff38b6"
+    line-numbers-plus-style = "#00e0c2"
+    line-numbers-right-format = "{np:>4}  "
+    line-numbers-right-style = white
+    line-numbers-zero-style = "#cccccc"
+    minus-emph-style = bold "#ff3838" "#ffe3f7"
+    minus-style = "#ff0080"
+    plus-emph-style = "#008a81" bold "#00ffbf"
+    plus-style = syntax "#cffff3"
+    syntax-theme = Github
+
+[delta "calochortus-lyallii"]
+    # author: https://github.com/manojkarthick
+    commit-decoration-style = none
+    dark = true
+    file-added-label = [+]
+    file-copied-label = [C]
+    file-decoration-style = none
+    file-modified-label = [M]
+    file-removed-label = [-]
+    file-renamed-label = [R]
+    file-style = 232 bold 184
+    hunk-header-decoration-style = none
+    hunk-header-file-style = "#999999"
+    hunk-header-line-number-style = bold "#03a4ff"
+    hunk-header-style = file line-number syntax
+    line-numbers = true
+    line-numbers-left-style = black
+    line-numbers-minus-style = "#B10036"
+    line-numbers-plus-style = "#03a4ff"
+    line-numbers-right-style = black
+    line-numbers-zero-style = "#999999"
+    minus-emph-style = syntax bold "#780000"
+    minus-style = syntax "#400000"
+    plus-emph-style = syntax bold "#007800"
+    plus-style = syntax "#004000"
+    whitespace-error-style = "#280050" reverse
+    zero-style = syntax
+    syntax-theme = Nord
 
 [includeIf "gitdir:~/src/work/**"]
     path = .gitconfig-work
