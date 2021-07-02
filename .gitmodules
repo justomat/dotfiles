@@ -8,3 +8,6 @@
 [submodule "dotbot-asdf"]
 	path = dotbot-asdf
 	url = https://github.com/sobolevn/dotbot-asdf.git
+[submodule "dotbot-git"]
+	path = dotbot-git
+	url = https://github.com/DrDynamic/dotbot-git.git

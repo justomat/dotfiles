@@ -17,6 +17,11 @@
         adding github to known hosts,
       ]
 
+- git:
+    '~/.zinit/bin':
+      url: 'https://github.com/zdharma/zinit.git'
+      method: clone
+
 - link:
     ~/.config/brewfile/Brewfile: Brewfile
 
