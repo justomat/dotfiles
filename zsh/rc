@@ -20,7 +20,7 @@ setopt share_history          # share command history data
 setopt incappendhistory       # dont delay appending to the history file until the term is killed
 
 ## Imports
-for file in ~/.{aliases,keybindings,plugins}; do
+for file in ~/.{aliases,plugins,keybindings}; do
   [[ -f $file ]] && source $file
 done
 
