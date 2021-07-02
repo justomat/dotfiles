@@ -2,6 +2,7 @@
     stdin: false
     link:
       create: true
+      relink: true
 
 - clean: ['~']
 
@@ -49,7 +50,9 @@
       prefix: '.git'
 
     # Tools:
-    # ~/.config/iterm-settings: config/iterm-settings
+    ~/.config/iterm-settings: 'config/iterm/settings.plist'
+    '~/Library/Application Support/iTerm2/Scripts/AutoLaunch/theme.py':
+        path: 'config/iterm/scripts/theme.py'
 
 # - - - - - - - - - - - - - - - - - - - -
 # Homebrew
