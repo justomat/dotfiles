@@ -30,11 +30,6 @@
 # Terminal
 # - - - - - - - - - - - - - - - - - - - -
 
-- git:
-    '~/.zinit/bin':
-      url: 'https://github.com/zdharma/zinit.git'
-      method: clone
-
 - link:
     ~/.zshenv: zsh/env
     ~/.zshrc: zsh/rc
