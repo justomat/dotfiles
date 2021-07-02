@@ -26,7 +26,7 @@
     diffFilter = delta --color-only
 
 [delta]
-    features = side-by-side calochortus-lyallii
+    features = side-by-side coracias-caudatus
     whitespace-error-style = 22 reverse
 
 [delta "coracias-caudatus"]
