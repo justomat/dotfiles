@@ -3,7 +3,7 @@
 import asyncio
 import iterm2
 
-DARK_THEME = "Night Owl"
+DARK_THEME = "City Lights"
 LIGHT_THEME = "Quiet Light"
 
 async def update(connection, theme):
