@@ -27,8 +27,6 @@
       method: clone
 
 - link:
-    ~/.config/brewfile/Brewfile: Brewfile
-
     # Terminal
     ~/.zshenv: zsh/env
     ~/.zshrc: zsh/rc
@@ -41,6 +39,9 @@
 
     # Tools:
     # ~/.config/iterm-settings: config/iterm-settings
+
+- link:
+    ~/.config/brewfile/Brewfile: Brewfile
 
 - shell:
     - description: install homebrew
