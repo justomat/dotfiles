@@ -23,14 +23,18 @@ SAVEHIST=100000
 HISTFILE="$HOME/.zsh_history"
 export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
 
-setopt appendhistory          # append to the history file (no overwriting)
-setopt extended_history       # record timestamp of command in HISTFILE
-setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
-setopt hist_ignore_dups       # ignore duplicated commands history list
-setopt hist_ignore_space      # ignore commands that start with space
-setopt hist_verify            # show command with history expansion to user before running it
-setopt share_history          # share command history data
-setopt incappendhistory       # dont delay appending to the history file until the term is killed
+setopt BANG_HIST              # treats the ! char specially during expansion
+setopt APPEND_HISTORY          # append to the history file (no overwriting)
+setopt EXTENDED_HISTORY       # record timestamp of command in HISTFILE
+setopt HIST_EXPIRE_DUPS_FIRST # delete duplicates first when HISTFILE size exceeds HISTSIZE
+setopt HIST_IGNORE_DUPS       # ignore duplicated commands history list
+setopt HIST_IGNORE_ALL_DUPS   # deletes an old recorded event if a new event is a duplicate
+setopt HIST_FIND_NO_DUPS      # does not display a previously found event.
+setopt HIST_SAVE_NO_DUPS      # does not write a duplicate event to the history file
+setopt HIST_IGNORE_SPACE      # ignore commands that start with space
+setopt HIST_VERIFY            # show command with history expansion to user before running it
+# SHARE_HISTORY, INC_APPEND_HISTORY, and INC_APPEND_HISTORY_TIME are mutually exclusive
+setopt SHARE_HISTORY          # share history across all sessions
 
 ## Completion
 if whence dircolors >/dev/null; then
