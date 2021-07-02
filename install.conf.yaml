@@ -48,17 +48,16 @@
       prefix: '.git'
 
     # Tools:
-    ~/.config/iterm-settings: 'config/iterm/settings.plist'
-    '~/Library/Application Support/iTerm2/Scripts/AutoLaunch/theme.py':
-      path: 'config/iterm/scripts/theme.py'
-    ~/.config/bat/config: config/bat/config
+    '~/Library/Application Support/iTerm2/Scripts/AutoLaunch/':
+      glob: true
+      path: config/iterm/scripts/*
+    ~/.config:
+      glob: true
+      path: config/*
 
 # - - - - - - - - - - - - - - - - - - - -
 # Homebrew
 # - - - - - - - - - - - - - - - - - - - -
-
-- link:
-    ~/.config/brewfile/Brewfile: Brewfile
 
 - shell:
     - description: install homebrew
