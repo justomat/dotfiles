@@ -31,13 +31,16 @@
 # - - - - - - - - - - - - - - - - - - - -
 
 - link:
-    ~/.zshenv: zsh/env
-    ~/.zshrc: zsh/rc
-    ~/.plugins: zsh/plugins
-    ~/.aliases: zsh/aliases
-    ~/.keybindings: zsh/keybindings
-    ~/.p10k.zsh: zsh/p10k.zsh
-
+    ~/:
+      glob: true
+      path: zsh/*[rc|env]
+      prefix: '.zsh'
+- link:
+    ~/:
+      glob: true
+      path: zsh/*[!rc|env]
+      prefix: '.'
+- link:
     # Git:
     ~/:
       glob: true
@@ -47,7 +50,7 @@
     # Tools:
     ~/.config/iterm-settings: 'config/iterm/settings.plist'
     '~/Library/Application Support/iTerm2/Scripts/AutoLaunch/theme.py':
-        path: 'config/iterm/scripts/theme.py'
+      path: 'config/iterm/scripts/theme.py'
     ~/.config/bat/config: config/bat/config
 
 # - - - - - - - - - - - - - - - - - - - -
@@ -70,7 +73,7 @@
     file: Brewfile
     stdout: true
     stderr: true
-    include: ['tap', 'brew', 'cask', 'mas']
+    include: ['tap', 'brew']
 
 # - - - - - - - - - - - - - - - - - - - -
 # Languages
