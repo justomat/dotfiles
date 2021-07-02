@@ -5,6 +5,10 @@
 
 - clean: ['~']
 
+# - - - - - - - - - - - - - - - - - - - -
+# SSH
+# - - - - - - - - - - - - - - - - - - - -
+
 - create:
     ~/.ssh:
       mode: 0700
@@ -21,13 +25,16 @@
         ssh-keygen -f "$HOME/.ssh/id_rsa" -qt rsa -b 4096 -N ""
         -C $(git config --global --get user.email)
 
+# - - - - - - - - - - - - - - - - - - - -
+# Terminal
+# - - - - - - - - - - - - - - - - - - - -
+
 - git:
     '~/.zinit/bin':
       url: 'https://github.com/zdharma/zinit.git'
       method: clone
 
 - link:
-    # Terminal
     ~/.zshenv: zsh/env
     ~/.zshrc: zsh/rc
 
@@ -39,6 +46,10 @@
 
     # Tools:
     # ~/.config/iterm-settings: config/iterm-settings
+
+# - - - - - - - - - - - - - - - - - - - -
+# Homebrew
+# - - - - - - - - - - - - - - - - - - - -
 
 - link:
     ~/.config/brewfile/Brewfile: Brewfile
@@ -57,6 +68,10 @@
     stdout: true
     stderr: true
     include: ['tap', 'brew', 'cask', 'mas']
+
+# - - - - - - - - - - - - - - - - - - - -
+# Languages
+# - - - - - - - - - - - - - - - - - - - -
 
 - asdf:
     - plugin: nodejs
