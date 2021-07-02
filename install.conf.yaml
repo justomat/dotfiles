@@ -53,6 +53,7 @@
     ~/.config/iterm-settings: 'config/iterm/settings.plist'
     '~/Library/Application Support/iTerm2/Scripts/AutoLaunch/theme.py':
         path: 'config/iterm/scripts/theme.py'
+    ~/.config/bat/config: config/bat/config
 
 # - - - - - - - - - - - - - - - - - - - -
 # Homebrew

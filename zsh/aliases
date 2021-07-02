@@ -1,1 +1,2 @@
-alias ls="exa --group-directories-first"
+alias ls="exa --group-directories-first -F"
+alias cat="bat --theme=\"\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo Visual Studio Dark+ || echo GitHub)\""
