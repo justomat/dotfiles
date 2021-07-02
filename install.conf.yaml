@@ -72,7 +72,7 @@
     file: Brewfile
     stdout: true
     stderr: true
-    include: ['tap', 'brew']
+    include: ['tap', 'brew', 'cask', 'mas']
 
 # - - - - - - - - - - - - - - - - - - - -
 # Languages
