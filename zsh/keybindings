@@ -1,0 +1,16 @@
+# Start typing + [Up-Arrow] - fuzzy find history forward
+if [[ -n "${terminfo[kcuu1]}" ]]; then
+  autoload -U history-substring-search-up
+  zle -N history-substring-search-up
+
+  bindkey "${terminfo[kcuu1]}" history-substring-search-up
+  bindkey "^[[A" history-substring-search-up
+fi
+# Start typing + [Down-Arrow] - fuzzy find history backward
+if [[ -n "${terminfo[kcud1]}" ]]; then
+  autoload -U history-substring-search-down
+  zle -N history-substring-search-down
+
+  bindkey "${terminfo[kcud1]}" history-substring-search-down
+  bindkey "^[[B" history-substring-search-down
+fi

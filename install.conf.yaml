@@ -37,6 +37,10 @@
 - link:
     ~/.zshenv: zsh/env
     ~/.zshrc: zsh/rc
+    ~/.plugins: zsh/plugins
+    ~/.aliases: zsh/aliases
+    ~/.keybindings: zsh/keybindings
+    ~/.p10k.zsh: zsh/p10k.zsh
 
     # Git:
     ~/:

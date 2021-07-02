@@ -1,0 +1,68 @@
+
+ZINIT_HOME="${ZINIT_HOME:-${ZPLG_HOME:-${ZDOTDIR:-$HOME}/.zinit}}"
+ZINIT_BIN_DIR_NAME="${${ZINIT_BIN_DIR_NAME:-$ZPLG_BIN_DIR_NAME}:-bin}"
+### Added by Zinit's installer
+if [[ ! -f $ZINIT_HOME/$ZINIT_BIN_DIR_NAME/zinit.zsh ]]; then
+    print -P "%F{33}▓▒░ %F{220}Installing DHARMA Initiative Plugin Manager (zdharma/zinit)…%f"
+    command mkdir -p "$ZINIT_HOME" && command chmod g-rwX "$ZINIT_HOME"
+    command git clone https://github.com/zdharma/zinit "$ZINIT_HOME/$ZINIT_BIN_DIR_NAME" && \
+        print -P "%F{33}▓▒░ %F{34}Installation successful.%f" || \
+        print -P "%F{160}▓▒░ The clone has failed.%f"
+fi
+source "$ZINIT_HOME/$ZINIT_BIN_DIR_NAME/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+
+# - - - - - - - - - - - - - - - - - - - -
+# Theme
+# - - - - - - - - - - - - - - - - - - - -
+
+# provide a simple prompt till the theme loads
+PS1="READY >"
+zinit ice wait'!' lucid
+zinit ice depth=1; zinit light romkatv/powerlevel10k
+
+zinit pack for dircolors-material
+
+# - - - - - - - - - - - - - - - - - - - -
+# General
+# - - - - - - - - - - - - - - - - - - - -
+
+# Load a few important annexes, without Turbo (this is currently required for annexes)
+zinit light-mode for zinit-zsh/z-a-meta-plugins
+zinit for annexes
+
+zinit lucid is-snippet for \
+    svn silent nocompile PZTM::archive \
+    PZTM::directory
+
+zinit wait"1" lucid from"gh-r" as"null" for \
+     sbin"fzf"            junegunn/fzf-bin \
+     sbin"**/rg"          BurntSushi/ripgrep \
+     sbin"**/fd"          @sharkdp/fd \
+     sbin"**/bat"         @sharkdp/bat \
+     sbin"bin/exa -> exa"  ogham/exa \
+     sbin"**/delta"       dandavison/delta
+
+# ruangguru cli
+zinit load "${GOPATH:=$HOME/go}/src/gitlab.com/ruangguru/source/rogu-zsh"
+
+# Toggles "sudo" before the current/previous command by pressing ESC-ESC.
+zinit wait"2" lucid for hcgraf/zsh-sudo
+
+# - - - - - - - - - - - - - - - - - - - -
+# Platforms
+# - - - - - - - - - - - - - - - - - - - -
+
+# install ruby gems
+zinit wait"2" lucid gem"!bundler" for zdharma/null
+
+# - - - - - - - - - - - - - - - - - - - -
+# Important
+# - - - - - - - - - - - - - - - - - - - -
+
+zinit wait lucid for zsh-users/zsh-history-substring-search
+
+export ZSH_AUTOSUGGEST_USE_ASYNC=1
+export ZSH_AUTOSUGGEST_MANUAL_REBIND=1
+zinit for zsh-users+fast
