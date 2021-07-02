@@ -69,7 +69,7 @@
       stdin: true
 
 - brewfile:
-    file: Brewfile
+    file: config/brewfile/Brewfile
     stdout: true
     stderr: true
     include: ['tap', 'brew', 'cask', 'mas']
