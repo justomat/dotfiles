@@ -1,5 +1,7 @@
 
-PATH=$PATH:/usr/local/bin
+PATH=$PATH:/usr/local/bin:~/.local/bin
+
+export EDITOR="code -w"
 
 # android
 export ANDROID_PATH=~/Library/Android/sdk/platform-tools

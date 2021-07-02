@@ -52,7 +52,7 @@ zstyle ':completion:*:exa' file-sort modification
 zstyle ':completion:*:exa' sort false
 
 ## Imports
-for file in ~/.{aliases,plugins,keybindings}; do
+for file in ~/.{aliases,functions,plugins,keybindings}; do
   [[ -f $file ]] && source $file
 done
 
