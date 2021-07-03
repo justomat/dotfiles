@@ -1,13 +1,14 @@
-tap "homebrew/core"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
+tap "homebrew/core"
 tap "homebrew/services"
 
+tap "wix/brew"
 tap "facebook/fb"
 tap "github/gh"
-tap "wix/brew"
 
 brew "openssl@1.1"
 brew "aria2"
@@ -25,8 +26,8 @@ brew "dnscrypt-proxy", restart_service: true
 brew "gdk-pixbuf"
 brew "gh"
 brew "git"
-brew "go"
 brew "gnupg"
+brew "go"
 brew "hub"
 brew "imagemagick"
 brew "jq"
@@ -49,10 +50,14 @@ brew "thefuck"
 brew "watchman"
 brew "wget"
 brew "zsh"
+
 cask "adoptopenjdk8"
 cask "android-studio"
 cask "google-cloud-sdk"
 cask "karabiner-elements"
+cask "logitech-options"
+cask "rectangle"
+cask "stats"
 
 mas "Amphetamine", id: 937984704
 mas "Bitwarden", id: 1352778147
