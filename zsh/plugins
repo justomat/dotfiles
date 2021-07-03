@@ -38,7 +38,9 @@ zinit lucid is-snippet for svn silent nocompile \
 
 zinit wait"1" lucid from"gh-r" as"null" for \
      sbin"fzf"            junegunn/fzf-bin \
-     sbin"**/rg"          BurntSushi/ripgrep \
+     sbin"**/rg"  \
+        cp'complete/_rg -> _rg' \
+        BurntSushi/ripgrep \
      sbin"**/fd"          @sharkdp/fd \
      sbin"**/bat"         @sharkdp/bat \
      sbin"bin/exa -> exa" \
