@@ -54,6 +54,8 @@
     ~/.config:
       glob: true
       path: config/*
+- shell:
+    - open config/iterm/themes/*.itermcolors
 
 # - - - - - - - - - - - - - - - - - - - -
 # Homebrew
