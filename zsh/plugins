@@ -41,7 +41,9 @@ zinit wait"1" lucid from"gh-r" as"null" for \
      sbin"**/rg"          BurntSushi/ripgrep \
      sbin"**/fd"          @sharkdp/fd \
      sbin"**/bat"         @sharkdp/bat \
-     sbin"bin/exa -> exa"  ogham/exa \
+     sbin"bin/exa -> exa" \
+        cp'completions/_exa -> _exa' \
+        ogham/exa \
      sbin"**/delta"       dandavison/delta
 
 # ruangguru cli
