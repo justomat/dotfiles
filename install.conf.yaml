@@ -54,8 +54,6 @@
     ~/.config:
       glob: true
       path: config/*
-- shell:
-    - open config/iterm/themes/*.itermcolors
 
 # - - - - - - - - - - - - - - - - - - - -
 # Homebrew
@@ -97,6 +95,7 @@
       versions: [latest]
 
 - shell:
+    - open config/iterm/themes/*.itermcolors
     - [touch ~/.hushlogin] # supress last login info
     - [sudo chsh -s $(which zsh) $(whoami), Making zsh the default shell]
     - [git submodule update --init --recursive, Installing submodules]
