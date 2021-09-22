@@ -83,5 +83,5 @@
     zero-style = syntax
     syntax-theme = Nord
 
-[includeIf "gitdir:~/src/work/**"]
+[includeIf "gitdir:~/src/kargotech/**"]
     path = .gitconfig-work
