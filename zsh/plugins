@@ -36,6 +36,11 @@ zinit lucid is-snippet for svn silent nocompile \
     PZTM::archive \
     PZTM::directory
 
+zinit id-as=rust wait=1 as=null sbin="bin/*" lucid rustup \
+    atload="[[ ! -f ${ZINIT[COMPLETIONS_DIR]}/_cargo ]] && zi creinstall rust; \
+    export CARGO_HOME=\$PWD RUSTUP_HOME=\$PWD/rustup" for \
+        zdharma/null
+
 zinit wait"1" lucid from"gh-r" as"null" for \
      sbin"fzf"            junegunn/fzf-bin \
      sbin"**/rg"  \
@@ -47,9 +52,6 @@ zinit wait"1" lucid from"gh-r" as"null" for \
         cp'completions/_exa -> _exa' \
         ogham/exa \
      sbin"**/delta"       dandavison/delta
-
-# ruangguru cli
-zinit load "${GOPATH:=$HOME/go}/src/gitlab.com/ruangguru/source/rogu-zsh"
 
 # Toggles "sudo" before the current/previous command by pressing ESC-ESC.
 zinit wait"2" lucid for hcgraf/zsh-sudo

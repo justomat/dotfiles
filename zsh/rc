@@ -51,6 +51,10 @@ zstyle ':completion:*:git-checkout:*' sort false
 zstyle ':completion:*:exa' file-sort modification
 zstyle ':completion:*:exa' sort false
 
+
+# asdf (node, yarn, ruby)
+source $(brew --prefix asdf)/asdf.sh
+
 ## Imports
 for file in ~/.{aliases,functions,plugins,keybindings}; do
   [[ -f $file ]] && source $file
