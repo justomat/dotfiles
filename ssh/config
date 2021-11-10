@@ -1,0 +1,19 @@
+Host work
+  HostName github.com
+  IdentityFile ~/.ssh/kargo_rsa
+  User git
+    
+Host personal
+  HostName github.com
+  IdentityFile ~/.ssh/id_rsa
+  User git
+
+Host 139.59.220.199
+  HostName 139.59.220.199
+  User root
+  IdentityFile ~/.ssh/do_rsa
+
+Host 139.59.220.199
+  HostName 139.59.220.199
+  User deployer
+  IdentityFile ~/.ssh/deployer_rsa
