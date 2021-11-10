@@ -4,12 +4,14 @@
 [user]
 	name = Geraldi Sutanto
 	email = contact@geraldisutanto.com
+[push]
+	default = current
 [diff]
 	algorithm = patience
 	colorMoved = default
 [alias]
 	unstage = reset HEAD --
-	rbm = pull --rebase upstream:master
+	rbm = pull --rebase upstream master
 
 # Enforce SSH
 # [url "ssh://git@github.com/"]
@@ -86,5 +88,11 @@
 		zero-style = syntax
 		syntax-theme = Nord
 
-[includeIf "gitdir:~/src/kargotech/**"]
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+
+[includeIf "gitdir:~/src/kargotech/"]
 		path = .gitconfig-work
