@@ -25,6 +25,8 @@
         [ -f "$HOME/.ssh/id_rsa" ] ||
         ssh-keygen -f "$HOME/.ssh/id_rsa" -qt rsa -b 4096 -N ""
         -C $(git config --global --get user.email)
+- link:
+    ~/.ssh/config: ssh/config
 
 # - - - - - - - - - - - - - - - - - - - -
 # Terminal
