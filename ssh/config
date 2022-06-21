@@ -1,19 +1,13 @@
-Host work
-  HostName github.com
-  IdentityFile ~/.ssh/kargo_rsa
-  User git
-    
-Host personal
-  HostName github.com
-  IdentityFile ~/.ssh/id_rsa
-  User git
+Host 212.1.212.202
+  HostName 212.1.212.202
+  Port 65002
+  User u533429279
 
-Host 139.59.220.199
-  HostName 139.59.220.199
-  User root
-  IdentityFile ~/.ssh/do_rsa
+Host github.com
+  HostName ssh.github.com
+  Port 443
 
 Host 139.59.220.199
   HostName 139.59.220.199
   User deployer
-  IdentityFile ~/.ssh/deployer_rsa
+  IdentityFile ~/.ssh/id_deployer

@@ -3,8 +3,8 @@
 import asyncio
 import iterm2
 
-DARK_THEME = "City Lights"
-LIGHT_THEME = "Quiet Light"
+DARK_THEME = "GitHub Dark Dimmed"
+LIGHT_THEME = "GitHub Light Default"
 
 async def update(connection, theme):
     # Themes have space-delimited attributes, one of which will be light or dark.

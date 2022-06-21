@@ -10,3 +10,4 @@ export ANDROID_SDK_ROOT=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_PATH}:${ANDROID_HOME}/emulator:${ANDROID_HOME}/platform-tools
 
 export PATH=$PATH:~/.yarn/bin
+. "$HOME/.cargo/env"

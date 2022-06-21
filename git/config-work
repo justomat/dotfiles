@@ -1,8 +1,2 @@
 [user]
 	email = geraldi.sutanto@kargo.tech
-
-# Enforce SSH
-[url "ssh://git@work/"]
-  insteadOf = https://github.com/
-[url "ssh://git@work/"]
-  insteadOf = ssh://git@github.com/

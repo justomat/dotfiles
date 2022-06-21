@@ -1,3 +1,5 @@
 alias mkdir="mkdir -p"
 alias ls="exa --group-directories-first -F"
-alias cat="bat --theme=\"\$(defaults read -globalDomain AppleInterfaceStyle &> /dev/null && echo Visual Studio Dark+ || echo GitHub)\""
+alias cat="bat"
+alias fix-spotlight="fd ~ -type d -path './.*' -prune -o -path './Pictures*' -prune -o -path './Library*' -prune -o -path '*node_modules/*' -prune -o -type d -name 'node_modules' -exec touch '{}/.metadata_never_index' \; -print"
+alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
