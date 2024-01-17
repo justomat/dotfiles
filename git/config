@@ -12,6 +12,9 @@
 [alias]
 	unstage = reset HEAD --
 	rbm = pull --rebase upstream master
+	root = rev-parse --show-toplevel
+	publish = push origin HEAD --force-with-lease
+	pub = publish
 
 # Enforce SSH
 # [url "ssh://git@github.com/"]
@@ -96,3 +99,13 @@
 
 [includeIf "gitdir:~/src/kargotech/"]
 		path = .gitconfig-work
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential

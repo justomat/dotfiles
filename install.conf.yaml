@@ -4,7 +4,9 @@
       create: true
       relink: true
 
-- clean: ['~']
+- clean:
+    ~/:
+      force: true
 
 # - - - - - - - - - - - - - - - - - - - -
 # SSH
@@ -32,30 +34,29 @@
 # Terminal
 # - - - - - - - - - - - - - - - - - - - -
 
+# - link:
+#     ~/.zshrc: zsh/rc
+#     ~/.zshenv: zsh/env
+#     ~/:
+#       glob: true
+#       path: zsh/*[!rc|env]
+#       prefix: "."
 - link:
-    ~/:
-      glob: true
-      path: zsh/*[rc|env]
-      prefix: '.zsh'
-- link:
-    ~/:
-      glob: true
-      path: zsh/*[!rc|env]
-      prefix: '.'
-- link:
-    # Git:
-    ~/:
-      glob: true
-      path: git/*
-      prefix: '.git'
+    # shell
+    ~/.alias.sh: shell/alias.sh
+    ~/.config/fish/config.fish: config/fish/config.fish
 
-    # Tools:
-    '~/Library/Application Support/iTerm2/Scripts/AutoLaunch/':
+    "~/Library/Application Support/iTerm2/Scripts/AutoLaunch/":
       glob: true
       path: config/iterm/scripts/*
     ~/.config:
       glob: true
       path: config/*
+      exclude: [config/fish]
+- link:
+    ~/.gitignore: git/ignore
+    ~/.gitconfig: git/config
+    ~/.gitattributes: git/attributes
 
 # - - - - - - - - - - - - - - - - - - - -
 # Homebrew
@@ -64,8 +65,8 @@
 - shell:
     - description: install homebrew
       command: >
-        if [[ $(command -v brew) == "" ]]; then
-          echo | /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)";
+        if [[ $(command -v brew) == ' ]]; then
+          echo | /usr/bin/ruby -e '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)';
         fi
       stdout: true
       stdin: true
@@ -74,7 +75,7 @@
     file: config/brewfile/Brewfile
     stdout: true
     stderr: true
-    include: ['tap', 'brew', 'cask', 'mas']
+    include: ["tap", "brew", "cask", "mas"]
 
 # - - - - - - - - - - - - - - - - - - - -
 # Languages
