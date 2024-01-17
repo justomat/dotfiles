@@ -60,6 +60,30 @@ for file in ~/.{aliases,functions,plugins,keybindings}; do
   [[ -f $file ]] && source $file
 done
 
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/ger/.mambaforge/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/ger/.mambaforge/etc/profile.d/conda.sh" ]; then
+        . "/Users/ger/.mambaforge/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/ger/.mambaforge/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+
+if [ -f "/Users/ger/.mambaforge/etc/profile.d/mamba.sh" ]; then
+    . "/Users/ger/.mambaforge/etc/profile.d/mamba.sh"
+fi
+# <<< conda initialize <<<
+
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/ger/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+
 # Compinit : After zinits, before cdreplay
 # https://carlosbecker.com/posts/speeding-up-zsh/
 autoload -Uz compinit
