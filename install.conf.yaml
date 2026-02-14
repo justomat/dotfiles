@@ -1,0 +1,57 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    # Shell
+    ~/.profile: shell/.profile
+    ~/.zshenv: shell/.zshenv
+    ~/.zshrc: shell/.zshrc
+
+    # Fish
+    ~/.config/fish/config.fish: fish/.config/fish/config.fish
+    ~/.config/fish/fish_plugins: fish/.config/fish/fish_plugins
+    ~/.config/fish/conf.d/fish_frozen_theme.fish: fish/.config/fish/conf.d/fish_frozen_theme.fish
+
+    # Git
+    ~/.gitconfig: git/.gitconfig
+
+    # Starship
+    ~/.config/starship.toml: starship/.config/starship.toml
+
+    # Mise
+    ~/.config/mise/config.toml: mise/.config/mise/config.toml
+
+    # Karabiner
+    ~/.config/karabiner/karabiner.json: karabiner/.config/karabiner/karabiner.json
+    ~/.config/karabiner/assets: karabiner/.config/karabiner/assets
+
+    # Homebrew
+    ~/.Brewfile: homebrew/.Brewfile
+
+    # Claude
+    ~/.claude.json: claude/.claude.json
+    ~/.claude/settings.json: claude/.claude/settings.json
+    ~/.claude/CLAUDE.md: claude/.claude/CLAUDE.md
+    ~/.claude/statusline-command.sh: claude/.claude/statusline-command.sh
+    ~/.claude/statusline-config.txt: claude/.claude/statusline-config.txt
+    ~/.claude/fetch-claude-usage.swift: claude/.claude/fetch-claude-usage.swift
+
+    # Placeholders (create dirs)
+    ~/.config/raycast/:
+      create: true
+      path: raycast/.config/raycast/
+    ~/.config/iterm/:
+      create: true
+      path: iterm/.config/iterm/
+
+# Plugins
+- brewfile:
+    file: homebrew/.Brewfile
+    stdout: true
+    stderr: true
+
+- mise:
+    - install

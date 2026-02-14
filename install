@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+set -e
+
+# Dotbot installation
+CONFIG="install.conf.yaml"
+DOTBOT_DIR="meta/dotbot"
+BREW_PLUGIN_DIR="meta/dotbot-brew"
+MISE_PLUGIN="meta/configs/dotbot-mise.py"
+
+cd "$(dirname "${BASH_SOURCE[0]}")"
+
+# Install submodules if needed
+git submodule update --init --recursive "${DOTBOT_DIR}"
+git submodule update --init --recursive "${BREW_PLUGIN_DIR}"
+
+# Run dotbot
+"${DOTBOT_DIR}/bin/dotbot" -d "${PWD}" -c "${CONFIG}" \
+    --plugin-dir "${BREW_PLUGIN_DIR}" \
+    --plugin "${MISE_PLUGIN}" \
+    "${@}"
