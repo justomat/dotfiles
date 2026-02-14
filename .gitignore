@@ -1,0 +1,8 @@
+# Secrets (contains API keys, session tokens)
+.secrets
+
+# OS
+.DS_Store
+
+# Karabiner automatic backups
+karabiner/.config/karabiner/automatic_backups/

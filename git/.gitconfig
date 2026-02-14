@@ -1,0 +1,17 @@
+# This is Git's per-user configuration file.
+[init]
+	defaultBranch = main
+[core]
+	pager = delta
+[interactive]
+	diffFilter = delta --color-only
+[delta]
+	navigate = true
+[merge]
+	conflictStyle = zdiff3
+
+# [includeIf "gitdir:~/src/justomat/**"]
+[include]
+	path="~/src/justomat/.gitconfig"
+[includeIf "gitdir:~/src/bitwyre/**"]
+    path="~/src/bitwyre/.gitconfig"

@@ -1,0 +1,28 @@
+{
+  "statusLine" : {
+    "command" : "bash \/Users\/ger\/.claude\/statusline-command.sh",
+    "type" : "command"
+  },
+  "enabledPlugins" : {
+    "context7-plugin@context7-marketplace" : true,
+    "superpowers@claude-plugins-official" : true,
+    "swift-lsp@claude-plugins-official" : true,
+    "conductor@conductor-cc" : true
+  },
+  "permissions" : {
+    "allow" : [
+      "Bash",
+      "Task",
+      "WebFetch",
+      "WebSearch"
+    ],
+    "deny" : [
+
+    ],
+    "ask" : [
+
+    ]
+  },
+  "model" : "sonnet",
+  "includeCoAuthoredBy" : false
+}
