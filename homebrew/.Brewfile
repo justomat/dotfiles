@@ -1,12 +1,16 @@
 tap "alexstrnik/browserino"
+tap "hamed-elfayome/claude-usage"
+tap "mistertea/et"
+tap "netbirdio/tap"
+tap "potatolabs/git-redate"
 # Library and utilities for processing GIFs
 brew "giflib"
 # General-purpose data compression with high compression ratio
 brew "xz"
-# Image format providing lossless and lossy compression for web images
-brew "webp"
 # New file format for still image compression
 brew "jpeg-xl"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
 # Mozilla CA certificate store
@@ -29,14 +33,6 @@ brew "boost"
 brew "btop"
 # Powerful, enterprise-ready, open source web server with automatic HTTPS
 brew "caddy"
-# Software library to render fonts
-brew "freetype"
-# XML-based font configuration API for X Windows
-brew "fontconfig"
-# Perl compatible regular expressions library with a new API
-brew "pcre2"
-# Core application library for C
-brew "glib"
 # Formatting tools for C, C++, Obj-C, Java, JavaScript, TypeScript
 brew "clang-format"
 # Cross-platform make
@@ -57,16 +53,24 @@ brew "fbthrift"
 brew "fb303"
 # Shared library for Watchman and Eden projects
 brew "edencommon"
+# Perl compatible regular expressions library with a new API
+brew "pcre2"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
 # Plugin manager for the Fish shell
 brew "fisher"
 # Command-line tools for fly.io services
 brew "flyctl"
+# Software library to render fonts
+brew "freetype"
+# XML-based font configuration API for X Windows
+brew "fontconfig"
 # Distributed revision control system
 brew "git"
 # Git extension for versioning large files
 brew "git-lfs"
+# Core application library for C
+brew "glib"
 # Assuan IPC Library
 brew "libassuan"
 # Passphrase entry dialog utilizing the Assuan protocol
@@ -77,9 +81,7 @@ brew "gnupg"
 brew "gzip"
 # ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 brew "libheif"
-# Library for JPEG-2000 image manipulation
-brew "openjpeg"
-# Tools and libraries to manipulate images in many formats
+# Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Image manipulation library
 brew "jpeg"
@@ -101,8 +103,6 @@ brew "libxslt"
 brew "libyaml"
 # Sign files & verify signatures. Works with signify in OpenBSD
 brew "minisign"
-# Polyglot runtime manager (asdf rust clone)
-brew "mise"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Remote terminal application
@@ -111,6 +111,8 @@ brew "mosh", args: ["HEAD"]
 brew "neovim"
 # Create, run, and share large language models (LLMs)
 brew "ollama", restart_service: :changed
+# Library for JPEG-2000 image manipulation
+brew "openjpeg"
 # Shell command parallelization utility
 brew "parallel"
 # Perl compatible regular expressions library
@@ -123,6 +125,8 @@ brew "rename"
 brew "rsync"
 # Used as a compiler wrapper and avoids compilation when possible
 brew "sccache"
+# Organize software neatly under a single directory tree (e.g. /usr/local)
+brew "stow"
 # User interface to the TELNET protocol
 brew "telnet"
 # Send macOS User Notifications from the command-line
@@ -135,6 +139,10 @@ brew "tlrc"
 brew "tmux"
 # Extraction utility for .zip compressed archives
 brew "unzip"
+# Cross-platform Rust rewrite of the GNU coreutils
+brew "uutils-coreutils"
+# Cross-platform Rust rewrite of the GNU findutils
+brew "uutils-findutils"
 # Execute commands when watched files change
 brew "watchexec"
 # Watch files and take action when they change
@@ -143,6 +151,8 @@ brew "watchman"
 brew "wget"
 # Remote terminal with IP roaming
 brew "mistertea/et/et"
+# Netbird project.
+brew "netbirdio/tap/netbird"
 # Change the dates of several git commits with a single command
 brew "potatolabs/git-redate/git-redate"
 # Tool to flash OS images to SD cards & USB drives
@@ -150,9 +160,13 @@ cask "balenaetcher"
 # Web browser focusing on privacy
 cask "brave-browser"
 # Browserino is a tiny browser selector for MacOS written in SwiftUI
-cask "browserino"
+cask "alexstrnik/browserino/browserino"
 # Anthropic's official Claude AI desktop app
 cask "claude"
+# Terminal-based AI coding assistant
+cask "claude-code"
+# Native macOS menu bar app for monitoring Claude AI usage limits
+cask "hamed-elfayome/claude-usage/claude-usage-tracker"
 # Write, edit, and chat about your code with AI
 cask "cursor"
 # Server and cloud storage browser
@@ -191,8 +205,12 @@ cask "karabiner-elements"
 cask "keepingyouawake"
 # Discover, download, and run local LLMs
 cask "lm-studio"
+# Open-source firewall to block unknown outgoing connections
+cask "lulu"
 # Open-source software for live streaming and screen recording
 cask "obs"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Control your tools with a few keystrokes

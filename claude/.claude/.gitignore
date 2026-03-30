@@ -1,0 +1,19 @@
+# Runtime data - not tracked in git
+backups/
+cache/
+debug/
+downloads/
+file-history/
+hooks/
+ide/
+plugins/
+projects/
+session-env/
+sessions/
+shell-snapshots/
+statsig/
+tasks/
+telemetry/
+todos/
+history.jsonl
+stats-cache.json
