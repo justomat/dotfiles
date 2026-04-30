@@ -51,25 +51,9 @@
     "remote-control": 106
   },
   "memoryUsageCount": 1,
-  "promptQueueUseCount": 94,
+  "promptQueueUseCount": 95,
   "btwUseCount": 5,
   "autoConnectIde": true,
-  "cachedStatsigGates": {
-    "tengu_disable_bypass_permissions_mode": false,
-    "tengu_use_file_checkpoints": true,
-    "tengu_tool_pear": false,
-    "tengu_log_1p_events": true,
-    "code_slack_app_install_banner": false,
-    "tengu_c4w_usage_limit_notifications_enabled": true,
-    "tengu_thinkback": false,
-    "tengu_sumi": false,
-    "tengu_react_vulnerability_warning": false,
-    "tengu_vscode_review_upsell": false,
-    "tengu_web_tasks": true,
-    "tengu_tool_result_persistence": true,
-    "tengu_prompt_suggestion": true,
-    "tengu_year_end_2025_campaign_promo": false
-  },
   "cachedDynamicConfigs": {
     "tengu_1p_event_batch_config": {
       "scheduledDelayMillis": 5000,
@@ -498,6 +482,22 @@
   },
   "respectGitignore": false,
   "unpinOpus47LaunchEffort": true,
+  "cachedStatsigGates": {
+    "tengu_disable_bypass_permissions_mode": false,
+    "tengu_use_file_checkpoints": true,
+    "tengu_tool_pear": false,
+    "tengu_log_1p_events": true,
+    "code_slack_app_install_banner": false,
+    "tengu_c4w_usage_limit_notifications_enabled": true,
+    "tengu_thinkback": false,
+    "tengu_sumi": false,
+    "tengu_react_vulnerability_warning": false,
+    "tengu_vscode_review_upsell": false,
+    "tengu_web_tasks": true,
+    "tengu_tool_result_persistence": true,
+    "tengu_prompt_suggestion": true,
+    "tengu_year_end_2025_campaign_promo": false
+  },
   "firstStartTime": "2025-09-26T17:11:07.900Z",
   "userID": "b0b170ba1f2d49c6e79850c3d391134f9c56edcf35307c9dd05c9c940530e9ed",
   "projects": {
@@ -1064,7 +1064,7 @@
       "enabledMcpjsonServers": [],
       "disabledMcpjsonServers": [],
       "hasTrustDialogAccepted": true,
-      "projectOnboardingSeenCount": 3,
+      "projectOnboardingSeenCount": 4,
       "hasClaudeMdExternalIncludesApproved": false,
       "hasClaudeMdExternalIncludesWarningShown": false,
       "lastCost": 0,
@@ -1545,7 +1545,7 @@
   },
   "changelogLastFetched": 1777593221153,
   "lastPlanModeUse": 1776574523357,
-  "lastReleaseNotesSeen": "2.1.119",
+  "lastReleaseNotesSeen": "2.1.123",
   "sonnet45MigrationComplete": true,
   "opus45MigrationComplete": true,
   "hasShownOpus45Notice": {
