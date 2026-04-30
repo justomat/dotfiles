@@ -38,6 +38,11 @@
     # Homebrew
     ~/.Brewfile: homebrew/.Brewfile
 
+    # Opencode
+    ~/.config/opencode:
+      path: opencode/.config/opencode
+      force: true
+
     # Claude
     ~/.claude.json: claude/.claude.json
     ~/.claude:
