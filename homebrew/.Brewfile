@@ -1,4 +1,5 @@
 tap "alexstrnik/browserino"
+tap "gromgit/fuse"
 tap "hamed-elfayome/claude-usage"
 tap "mistertea/et"
 tap "netbirdio/tap"
@@ -24,8 +25,6 @@ brew "aria2"
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
-# Official Amazon AWS command-line interface
-brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -150,6 +149,8 @@ brew "rtk"
 brew "sccache"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
+# SMTP command-line test tool
+brew "swaks"
 # User interface to the TELNET protocol
 brew "telnet"
 # Send macOS User Notifications from the command-line
@@ -176,6 +177,8 @@ brew "watchman"
 brew "wget"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
+# Read-write NTFS driver for FUSE
+brew "gromgit/fuse/ntfs-3g-mac"
 # Remote terminal with IP roaming
 brew "mistertea/et/et"
 # Netbird project.
@@ -194,6 +197,8 @@ cask "alexstrnik/browserino/browserino"
 cask "claude"
 # Native macOS menu bar app for monitoring Claude AI usage limits
 cask "hamed-elfayome/claude-usage/claude-usage-tracker"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
 # Write, edit, and chat about your code with AI
 cask "cursor"
 # Server and cloud storage browser
@@ -235,6 +240,10 @@ cask "karabiner-elements"
 cask "keepingyouawake"
 # Open-source firewall to block unknown outgoing connections
 cask "lulu"
+# File system integration
+cask "macfuse"
+# Re-mounts write-protected NTFS volumes
+cask "mounty"
 # Open-source software for live streaming and screen recording
 cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
@@ -440,3 +449,4 @@ vscode "zamerick.vscode-caddyfile-syntax"
 vscode "zenstack.zenstack"
 vscode "zxh404.vscode-proto3"
 cargo "cargo-watch"
+uv "ansible-core"

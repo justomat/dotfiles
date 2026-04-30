@@ -1659,6 +1659,10 @@
     "commit-commands:commit-push-pr": {
       "usageCount": 1,
       "lastUsedAt": 1777593240001
+    },
+    "commit-commands:commit": {
+      "usageCount": 1,
+      "lastUsedAt": 1777593393509
     }
   },
   "githubRepoPaths": {
