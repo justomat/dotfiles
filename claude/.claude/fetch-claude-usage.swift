@@ -3,13 +3,13 @@
 import Foundation
 func readSessionKey() -> String? {
     // Session key injected from Keychain by Claude Usage app
-    let injectedKey = "YOUR_SESSION_KEY_HERE"
+    let injectedKey = "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"
     let trimmedKey = injectedKey.trimmingCharacters(in: .whitespacesAndNewlines)
     return trimmedKey.isEmpty ? nil : trimmedKey
 }
 func readOrganizationId() -> String? {
     // Organization ID injected from settings by Claude Usage app
-    let injectedOrgId = "YOUR_ORG_ID_HERE"
+    let injectedOrgId = "8fa1a797-08db-4801-9862-84784d629299"
     let trimmedOrgId = injectedOrgId.trimmingCharacters(in: .whitespacesAndNewlines)
     return trimmedOrgId.isEmpty ? nil : trimmedOrgId
 }

@@ -1,0 +1,34 @@
+[2026-03-31T14:42:42.819Z] Could not locate the bindings file. Tried:
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/build/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/build/Debug/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/build/Release/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/out/Debug/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/Debug/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/out/Release/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/Release/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/build/default/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/compiled/24.14.1/darwin/arm64/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/addon-build/release/install-root/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/addon-build/debug/install-root/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/addon-build/default/install-root/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/lib/binding/node-v137-darwin-arm64/better_sqlite3.node
+Error: Could not locate the bindings file. Tried:
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/build/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/build/Debug/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/build/Release/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/out/Debug/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/Debug/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/out/Release/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/Release/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/build/default/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/compiled/24.14.1/darwin/arm64/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/addon-build/release/install-root/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/addon-build/debug/install-root/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/addon-build/default/install-root/better_sqlite3.node
+ → /Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/lib/binding/node-v137-darwin-arm64/better_sqlite3.node
+    at bindings (/Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/bindings/bindings.js:126:9)
+    at new Database (/Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/node_modules/better-sqlite3/lib/database.js:48:64)
+    at new u (file:///Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/hooks/session-db.bundle.mjs:1:1440)
+    at new _ (file:///Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/hooks/session-db.bundle.mjs:1:2800)
+    at file:///Users/ger/src/justomat/dotfiles/claude/.claude/plugins/marketplaces/context-mode/hooks/sessionstart.mjs:79:16
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)

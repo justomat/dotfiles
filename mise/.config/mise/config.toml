@@ -5,12 +5,16 @@ bun = "latest"
 deno = "latest"
 "npm:wrangler" = "latest"
 "npm:@google/gemini-cli" = "latest"
-"npm:@typescript/native-preview" = "7.0.0-dev.20260228.1"
+"npm:@typescript/native-preview" = "7.0.0-dev.20260430.1"
+"npm:@biznetgio/cli" = "latest"
 
 python = "latest"
 uv = "latest"
 
 cargo-binstall = "latest"
+"npm:opencode-ai" = "latest"
+"npm:opencode-openai-codex-auth" = "latest"
+"npm:openportal" = "latest"
 
 [settings]
 experimental = true

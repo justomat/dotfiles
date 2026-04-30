@@ -3,14 +3,13 @@ tap "hamed-elfayome/claude-usage"
 tap "mistertea/et"
 tap "netbirdio/tap"
 tap "potatolabs/git-redate"
+tap "pulumi/tap"
 # Library and utilities for processing GIFs
 brew "giflib"
 # General-purpose data compression with high compression ratio
 brew "xz"
 # New file format for still image compression
 brew "jpeg-xl"
-# Image format providing lossless and lossy compression for web images
-brew "webp"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
 # Mozilla CA certificate store
@@ -25,8 +24,12 @@ brew "aria2"
 brew "autoconf"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
+# Official Amazon AWS command-line interface
+brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
 # Collection of portable C++ source libraries
 brew "boost"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
@@ -53,6 +56,10 @@ brew "fbthrift"
 brew "fb303"
 # Shared library for Watchman and Eden projects
 brew "edencommon"
+# Modern, maintained replacement for ls
+brew "eza"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
 # Perl compatible regular expressions library with a new API
 brew "pcre2"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -65,32 +72,40 @@ brew "flyctl"
 brew "freetype"
 # XML-based font configuration API for X Windows
 brew "fontconfig"
+# Command-line fuzzy finder written in Go
+brew "fzf"
+# GitHub command-line tool
+brew "gh"
 # Distributed revision control system
 brew "git"
+# Syntax-highlighting pager for git and diff output
+brew "git-delta"
 # Git extension for versioning large files
 brew "git-lfs"
 # Core application library for C
 brew "glib"
-# Assuan IPC Library
-brew "libassuan"
-# Passphrase entry dialog utilizing the Assuan protocol
-brew "pinentry"
-# GNU Privacy Guard (OpenPGP)
-brew "gnupg"
 # Popular GNU data compression program
 brew "gzip"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
 # ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 brew "libheif"
 # Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Image manipulation library
 brew "jpeg"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
+# Handy way to save and run project-specific commands
+brew "just"
 # Save disk space by cleaning non-essential files from software projects
 brew "kondo"
 # Graphical front-end for GCC's coverage testing tool (gcov)
 brew "lcov"
 # Multi-format archive and compression library
 brew "libarchive"
+# Assuan IPC Library
+brew "libassuan"
 # Library for encoding and decoding .avif files
 brew "libavif"
 # Postgres C API library
@@ -109,6 +124,8 @@ brew "mkcert"
 brew "mosh", args: ["HEAD"]
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Oracle Cloud Infrastructure CLI
+brew "oci-cli"
 # Create, run, and share large language models (LLMs)
 brew "ollama", restart_service: :changed
 # Library for JPEG-2000 image manipulation
@@ -117,12 +134,18 @@ brew "openjpeg"
 brew "parallel"
 # Perl compatible regular expressions library
 brew "pcre"
+# Passphrase entry dialog utilizing the Assuan protocol
+brew "pinentry"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Perl-powered file rename script with many helpful built-ins
 brew "rename"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Utility that provides fast incremental file transfer
 brew "rsync"
+# CLI proxy to minimize LLM token consumption
+brew "rtk"
 # Used as a compiler wrapper and avoids compilation when possible
 brew "sccache"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
@@ -139,6 +162,8 @@ brew "tlrc"
 brew "tmux"
 # Extraction utility for .zip compressed archives
 brew "unzip"
+# Tool for working with usage-spec CLIs
+brew "usage"
 # Cross-platform Rust rewrite of the GNU coreutils
 brew "uutils-coreutils"
 # Cross-platform Rust rewrite of the GNU findutils
@@ -149,12 +174,16 @@ brew "watchexec"
 brew "watchman"
 # Internet file retriever
 brew "wget"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 # Remote terminal with IP roaming
 brew "mistertea/et/et"
 # Netbird project.
 brew "netbirdio/tap/netbird"
 # Change the dates of several git commits with a single command
 brew "potatolabs/git-redate/git-redate"
+# Pulumi - Modern Infrastructure as Code. Any cloud, any language 
+brew "pulumi/tap/pulumi"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Web browser focusing on privacy
@@ -163,8 +192,6 @@ cask "brave-browser"
 cask "alexstrnik/browserino/browserino"
 # Anthropic's official Claude AI desktop app
 cask "claude"
-# Terminal-based AI coding assistant
-cask "claude-code"
 # Native macOS menu bar app for monitoring Claude AI usage limits
 cask "hamed-elfayome/claude-usage/claude-usage-tracker"
 # Write, edit, and chat about your code with AI
@@ -178,6 +205,7 @@ cask "eqmac"
 # Web browser
 cask "firefox"
 cask "font-juliamono"
+cask "font-maple-mono-nf-cn"
 cask "font-maple-mono-normal-cn"
 # GIT client
 cask "fork"
@@ -191,6 +219,8 @@ cask "google-chrome"
 cask "gpg-suite"
 # Utility to hide menu bar items
 cask "hiddenbar"
+# Open source API development ecosystem
+cask "hoppscotch"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Enable generative AI features in iTerm2
@@ -203,8 +233,6 @@ cask "jetbrains-toolbox"
 cask "karabiner-elements"
 # Tool to prevent the system from going into sleep mode
 cask "keepingyouawake"
-# Discover, download, and run local LLMs
-cask "lm-studio"
 # Open-source firewall to block unknown outgoing connections
 cask "lulu"
 # Open-source software for live streaming and screen recording
@@ -243,6 +271,7 @@ vscode "alefragnani.project-manager"
 vscode "alexdima.copy-relative-path"
 vscode "amiralizadeh9480.laravel-extra-intellisense"
 vscode "andys8.jest-snippets"
+vscode "anthropic.claude-code"
 vscode "arzg.gamut"
 vscode "arzg.rustdoc-theme"
 vscode "arzg.sema"
@@ -280,6 +309,7 @@ vscode "dbaeumer.vscode-eslint"
 vscode "denoland.vscode-deno"
 vscode "dhruvdh.pale-fire-dark"
 vscode "dotiful.dotfiles-syntax-highlighting"
+vscode "drblury.protobuf-vsc"
 vscode "eamodio.gitlens"
 vscode "editorconfig.editorconfig"
 vscode "entexa.tall-stack"
@@ -295,7 +325,6 @@ vscode "formulahendry.auto-complete-tag"
 vscode "formulahendry.auto-rename-tag"
 vscode "foxundermoon.shell-format"
 vscode "geobomatic.dark-plus-one-monokai"
-vscode "github.copilot"
 vscode "github.copilot-chat"
 vscode "github.github-vscode-theme"
 vscode "github.vscode-github-actions"
@@ -343,6 +372,7 @@ vscode "ms-vscode-remote.remote-ssh-edit"
 vscode "ms-vscode-remote.remote-wsl"
 vscode "ms-vscode-remote.vscode-remote-extensionpack"
 vscode "ms-vscode.cmake-tools"
+vscode "ms-vscode.cpp-devtools"
 vscode "ms-vscode.makefile-tools"
 vscode "ms-vscode.powershell"
 vscode "ms-vscode.remote-explorer"

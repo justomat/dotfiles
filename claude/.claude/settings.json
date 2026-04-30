@@ -1,16 +1,14 @@
 {
   "includeCoAuthoredBy": false,
   "permissions": {
-    "allow": [
-      "Bash",
-      "Task",
-      "WebFetch",
-      "WebSearch"
-    ],
-    "deny": [],
+    "allow": ["Bash", "Task", "WebFetch", "WebSearch"],
+    "deny": ["Bash(sudo *)"],
     "ask": [],
     "defaultMode": "bypassPermissions"
   },
+  "skipDangerousModePermissionPrompt": true,
+  "model": "sonnet",
+  "effortLevel": "medium",
   "hooks": {
     "PreToolUse": [
       {
@@ -29,9 +27,22 @@
     "command": "bash /Users/ger/.claude/statusline-command.sh"
   },
   "enabledPlugins": {
-    "context7-plugin@context7-marketplace": true,
+    "swift-lsp@claude-plugins-official": false,
     "superpowers@claude-plugins-official": true,
-    "swift-lsp@claude-plugins-official": true
+    "context7@claude-plugins-official": true,
+    "github@claude-plugins-official": true,
+    "feature-dev@claude-plugins-official": false,
+    "skill-creator@claude-plugins-official": false,
+    "typescript-lsp@claude-plugins-official": true,
+    "commit-commands@claude-plugins-official": true,
+    "claude-code-setup@claude-plugins-official": true,
+    "supabase@claude-plugins-official": false,
+    "plugin-dev@claude-plugins-official": false,
+    "expo@claude-plugins-official": false,
+    "cloudflare@claude-plugins-official": true
   },
-  "skipDangerousModePermissionPrompt": true
+  "extraKnownMarketplaces": {},
+  "theme": "light-daltonized",
+  "preferredNotifChannel": "iterm2",
+  "agentPushNotifEnabled": true
 }
