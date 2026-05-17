@@ -1,26 +1,21 @@
 {
   "includeCoAuthoredBy": false,
   "permissions": {
-    "allow": ["Bash", "Task", "WebFetch", "WebSearch"],
-    "deny": ["Bash(sudo *)"],
+    "allow": [
+      "Bash",
+      "Task",
+      "WebFetch",
+      "WebSearch"
+    ],
+    "deny": [
+      "Bash(sudo *)"
+    ],
     "ask": [],
     "defaultMode": "bypassPermissions"
   },
-  "skipDangerousModePermissionPrompt": true,
-  "model": "sonnet",
-  "effortLevel": "medium",
+  "model": "opusplan",
   "hooks": {
-    "PreToolUse": [
-      {
-        "matcher": "Bash",
-        "hooks": [
-          {
-            "type": "command",
-            "command": "/Users/ger/.claude/hooks/rtk-rewrite.sh"
-          }
-        ]
-      }
-    ]
+    "PreToolUse": []
   },
   "statusLine": {
     "type": "command",
@@ -30,7 +25,6 @@
     "swift-lsp@claude-plugins-official": false,
     "superpowers@claude-plugins-official": true,
     "context7@claude-plugins-official": true,
-    "github@claude-plugins-official": true,
     "feature-dev@claude-plugins-official": false,
     "skill-creator@claude-plugins-official": false,
     "typescript-lsp@claude-plugins-official": true,
@@ -38,11 +32,15 @@
     "claude-code-setup@claude-plugins-official": true,
     "supabase@claude-plugins-official": false,
     "plugin-dev@claude-plugins-official": false,
-    "expo@claude-plugins-official": false,
-    "cloudflare@claude-plugins-official": true
+    "expo@claude-plugins-official": true,
+    "cloudflare@claude-plugins-official": true,
+    "rust-analyzer-lsp@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {},
+  "effortLevel": "medium",
+  "skipDangerousModePermissionPrompt": true,
   "theme": "light-daltonized",
   "preferredNotifChannel": "iterm2",
+  "autoCompactEnabled": false,
   "agentPushNotifEnabled": true
 }
