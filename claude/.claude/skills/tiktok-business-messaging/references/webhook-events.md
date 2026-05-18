@@ -1,5 +1,7 @@
 # TikTok Business — Webhook Events
 
+**Authoritative schemas:** the full OpenAPI 3.1 spec with every event's request/response and named schemas in `components/schemas` is at <https://tiktok-business-api-docs.pages.dev/#tag/Webhooks>. This file is a quick-lookup companion focused on gotchas and non-obvious behaviour.
+
 All TikTok business webhooks (Business Messaging, Mentions, Accounts post/comment events) are subscribed via `POST /business/webhook/update/` at the **developer app** level and share the same outer envelope. POSTed to your callback URL as `application/json`.
 
 Available `event_type` values:
@@ -231,7 +233,7 @@ Same scope requirement as `im_auto_message_config_update`.
 }
 ```
 
-Only fires when Comment-to-Message is enabled. Reply via `/business/message/send/` using `direct_reply.reply_type=COMMENT_REPLY`; all five eligibility conditions in REFERENCE.md must hold.
+Only fires when Comment-to-Message is enabled. Reply via `/business/message/send/` using `direct_reply.reply_type=COMMENT_REPLY`; all five eligibility conditions in [direct-reply.md](direct-reply.md) must hold.
 
 ## Prerequisites for delivery (DIRECT_MESSAGE)
 
@@ -424,6 +426,6 @@ Permissions: TikTok Accounts > Business Comment on the dev app, **plus** the acc
 | `set_to_friends_only` | Restricted to friends |
 | `set_to_public` | Made publicly visible (from hidden or friends-only) |
 
-The payload **does not include the comment text** — for `insert` events, call `GET /business/comment/list/?comment_ids=[<comment_id>]` to fetch body, author, likes, etc. (see [REFERENCE.md](REFERENCE.md#comments-rest)). For `delete`, the comment is gone — the webhook is the only record.
+The payload **does not include the comment text** — for `insert` events, call `GET /business/comment/list/?comment_ids=[<comment_id>]` to fetch body, author, likes, etc. (see [comments.md](comments.md)). For `delete`, the comment is gone — the webhook is the only record.
 
 **JSON number precision:** `comment_id`, `video_id`, and `parent_comment_id` are documented as `number` and TikTok serializes them as bare numerics (e.g. `7247303576418566913`). They exceed `Number.MAX_SAFE_INTEGER` (2^53−1), so in Node/JS use `JSON.parse` with a reviver that converts those keys to `BigInt` or `string`, or use a library like `json-bigint`. Naïve `JSON.parse` will silently lose precision and produce wrong IDs.
