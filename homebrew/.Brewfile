@@ -5,12 +5,6 @@ tap "mistertea/et"
 tap "netbirdio/tap"
 tap "potatolabs/git-redate"
 tap "pulumi/tap"
-# Library and utilities for processing GIFs
-brew "giflib"
-# General-purpose data compression with high compression ratio
-brew "xz"
-# New file format for still image compression
-brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
 # Mozilla CA certificate store
@@ -29,6 +23,8 @@ brew "automake"
 brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# General-purpose data compression with high compression ratio
+brew "xz"
 # Collection of portable C++ source libraries
 brew "boost"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
@@ -39,6 +35,10 @@ brew "caddy"
 brew "clang-format"
 # Cross-platform make
 brew "cmake"
+# YAML Parser
+brew "libyaml"
+# Dependency manager for Cocoa projects
+brew "cocoapods"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Load/unload environment variables based on $PWD
@@ -55,10 +55,14 @@ brew "fbthrift"
 brew "fb303"
 # Shared library for Watchman and Eden projects
 brew "edencommon"
+# Speech synthesizer that supports more than hundred languages and accents
+brew "espeak-ng"
 # Modern, maintained replacement for ls
 brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Play, record, convert, and stream select audio and video codecs
+brew "ffmpeg"
 # Perl compatible regular expressions library with a new API
 brew "pcre2"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -75,6 +79,8 @@ brew "fontconfig"
 brew "fzf"
 # GitHub command-line tool
 brew "gh"
+# Library and utilities for processing GIFs
+brew "giflib"
 # Distributed revision control system
 brew "git"
 # Syntax-highlighting pager for git and diff output
@@ -93,6 +99,8 @@ brew "libheif"
 brew "imagemagick"
 # Image manipulation library
 brew "jpeg"
+# New file format for still image compression
+brew "jpeg-xl"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Handy way to save and run project-specific commands
@@ -113,8 +121,6 @@ brew "libpq"
 brew "librdkafka"
 # C XSLT library for GNOME
 brew "libxslt"
-# YAML Parser
-brew "libyaml"
 # Sign files & verify signatures. Works with signify in OpenBSD
 brew "minisign"
 # Simple tool to make locally trusted development certificates
@@ -126,7 +132,7 @@ brew "neovim"
 # Oracle Cloud Infrastructure CLI
 brew "oci-cli"
 # Create, run, and share large language models (LLMs)
-brew "ollama", restart_service: :changed
+brew "ollama", restart_service: :changed, link: false
 # Library for JPEG-2000 image manipulation
 brew "openjpeg"
 # Shell command parallelization utility
@@ -187,6 +193,10 @@ brew "netbirdio/tap/netbird"
 brew "potatolabs/git-redate/git-redate"
 # Pulumi - Modern Infrastructure as Code. Any cloud, any language 
 brew "pulumi/tap/pulumi"
+# Android SDK component
+cask "android-platform-tools"
+# Terminal interface for Antigravity agents
+cask "antigravity-cli"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Web browser focusing on privacy
@@ -197,6 +207,8 @@ cask "alexstrnik/browserino/browserino"
 cask "claude"
 # Native macOS menu bar app for monitoring Claude AI usage limits
 cask "hamed-elfayome/claude-usage/claude-usage-tracker"
+# Ghostty-based terminal with vertical tabs and notifications for AI coding agents
+cask "cmux"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
 # Write, edit, and chat about your code with AI
@@ -207,6 +219,8 @@ cask "cyberduck"
 cask "discord"
 # System-wide audio equaliser
 cask "eqmac"
+# Launch builds and start simulators from your menu bar
+cask "expo-orbit"
 # Web browser
 cask "firefox"
 cask "font-juliamono"
@@ -248,6 +262,8 @@ cask "mounty"
 cask "obs"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Get up and running with large language models locally
+cask "ollama-app"
 # Replacement for Docker Desktop
 cask "orbstack"
 # Control your tools with a few keystrokes
@@ -272,6 +288,8 @@ cask "visual-studio-code"
 cask "vlc"
 # Multiplayer code editor
 cask "zed"
+# OpenJDK distribution from Azul
+cask "zulu@17"
 vscode "a-h.templ"
 vscode "adrianwilczynski.alpine-js-intellisense"
 vscode "ahmadawais.shades-of-purple"
@@ -450,3 +468,4 @@ vscode "zenstack.zenstack"
 vscode "zxh404.vscode-proto3"
 cargo "cargo-watch"
 uv "ansible-core"
+npm "corepack"
