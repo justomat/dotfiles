@@ -16,6 +16,7 @@ tasks/
 telemetry/
 todos/
 paste-cache/
+plans/
 history.jsonl
 stats-cache.json
 
