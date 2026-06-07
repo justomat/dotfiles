@@ -7,3 +7,6 @@ if status is-interactive
 else
     mise activate fish --shims | source
 end
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/ger/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/ger/Downloads/google-cloud-sdk/path.fish.inc'; end
