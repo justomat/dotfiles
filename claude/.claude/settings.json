@@ -32,14 +32,14 @@
     "claude-code-setup@claude-plugins-official": true,
     "supabase@claude-plugins-official": false,
     "plugin-dev@claude-plugins-official": false,
-    "expo@claude-plugins-official": true,
+    "expo@claude-plugins-official": false,
     "cloudflare@claude-plugins-official": true,
     "rust-analyzer-lsp@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {},
-  "effortLevel": "medium",
+  "effortLevel": "high",
   "skipDangerousModePermissionPrompt": true,
-  "theme": "light-daltonized",
+  "theme": "dark-daltonized",
   "preferredNotifChannel": "iterm2",
   "autoCompactEnabled": false,
   "agentPushNotifEnabled": true
