@@ -15,5 +15,16 @@ statsig/
 tasks/
 telemetry/
 todos/
+paste-cache/
 history.jsonl
 stats-cache.json
+
+# Secrets
+.credentials.json
+
+# Runtime noise (caches, logs, status markers, backups)
+.last-cleanup
+.last-update-result.json
+.statusline-usage-cache
+*.log
+*.bak

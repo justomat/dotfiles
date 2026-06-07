@@ -4,5 +4,9 @@
 # OS
 .DS_Store
 
+# Python cache (dotbot-mise plugin)
+__pycache__/
+*.py[cod]
+
 # Karabiner automatic backups
 karabiner/.config/karabiner/automatic_backups/
