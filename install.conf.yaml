@@ -2,7 +2,7 @@
     link:
       relink: true
 
-- clean: ['~']
+- clean: ["~"]
 
 - link:
     # Shell
@@ -20,9 +20,6 @@
 
     # Git
     ~/.gitconfig: git/.gitconfig
-
-    # Starship
-    ~/.config/starship.toml: starship/.config/starship.toml
 
     # Mise
     ~/.config/mise/config.toml: mise/.config/mise/config.toml
