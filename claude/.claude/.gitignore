@@ -26,6 +26,7 @@ stats-cache.json
 # Runtime noise (caches, logs, status markers, backups)
 .last-cleanup
 .last-update-result.json
+.mcp-needs-auth-cache.json
 .statusline-usage-cache
 *.log
 *.bak

@@ -23,7 +23,6 @@
   },
   "enabledPlugins": {
     "swift-lsp@claude-plugins-official": false,
-    "superpowers@claude-plugins-official": true,
     "context7@claude-plugins-official": true,
     "feature-dev@claude-plugins-official": false,
     "skill-creator@claude-plugins-official": false,
@@ -42,5 +41,6 @@
   "theme": "dark-daltonized",
   "preferredNotifChannel": "iterm2",
   "autoCompactEnabled": false,
-  "agentPushNotifEnabled": true
+  "agentPushNotifEnabled": true,
+  "tui": "fullscreen"
 }
