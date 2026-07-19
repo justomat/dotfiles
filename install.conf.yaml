@@ -6,6 +6,7 @@
 
 - link:
     # Shell
+    ~/.aliases: shell/.aliases
     ~/.profile: shell/.profile
     ~/.zshenv: shell/.zshenv
     ~/.zshrc: shell/.zshrc
@@ -19,7 +20,9 @@
     ~/.gitconfig: git/.gitconfig
 
     # Mise
-    ~/.config/mise/config.toml: mise/.config/mise/config.toml
+    ~/.config/mise/config.toml:
+      path: mise/.config/mise/config.toml
+      create: true
 
     # Karabiner
     ~/.config/karabiner/karabiner.json:
@@ -30,7 +33,7 @@
       force: true
 
     # Homebrew
-    ~/.Brewfile: homebrew/.Brewfile
+    ~/Brewfile: homebrew/Brewfile
 
     # Opencode
     ~/.config/opencode:
@@ -45,7 +48,7 @@
 
 # Plugins
 - brewfile:
-    - homebrew/.Brewfile
+    - homebrew/Brewfile
 
 - mise:
     - install

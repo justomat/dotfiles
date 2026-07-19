@@ -1,0 +1,10 @@
+alias vim=nvim
+alias cat=bat
+alias ls="eza --group-directories-first -F"
+
+alias mkdir="mkdir -p"
+
+alias d=docker
+alias dc="d compose"
+alias compose=dc
+alias oc=opencode
