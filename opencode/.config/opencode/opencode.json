@@ -4,8 +4,7 @@
   "plugin": [
     "@franlol/opencode-md-table-formatter@latest",
     "@plannotator/opencode@latest",
-    "@tarquinen/opencode-dcp@latest",
-    "superpowers@git+https://github.com/obra/superpowers.git"
+    "@tarquinen/opencode-dcp@latest"
   ],
   "mcp": {
     "context7": {
