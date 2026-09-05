@@ -47,6 +47,21 @@
       path: claude/.claude
       force: true
 
+    # Zed
+    ~/.config/zed/settings.json:
+      path: zed/.config/zed/settings.json
+      force: true
+
+    # GitHub CLI
+    ~/.config/gh/config.yml:
+      path: gh/.config/gh/config.yml
+      force: true
+
+    # QMD
+    ~/.config/qmd/index.yml:
+      path: qmd/.config/qmd/index.yml
+      force: true
+
 # Plugins
 - brewfile:
     - homebrew/Brewfile
