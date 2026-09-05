@@ -39,15 +39,15 @@
   },
   "extraKnownMarketplaces": {},
   "effortLevel": "medium",
+  "modelSettings": {
+    "claude-opus-5": {
+      "effortLevel": "medium"
+    }
+  },
   "tui": "fullscreen",
   "skipDangerousModePermissionPrompt": true,
   "theme": "dark-daltonized",
   "preferredNotifChannel": "iterm2",
   "autoCompactEnabled": false,
-  "agentPushNotifEnabled": true,
-  "modelSettings": {
-    "claude-opus-5": {
-      "effortLevel": "medium"
-    }
-  }
+  "agentPushNotifEnabled": true
 }

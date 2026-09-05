@@ -21,6 +21,7 @@ history.jsonl
 stats-cache.json
 chrome/
 daemon/
+daemon.*
 image-cache/
 jobs/
 

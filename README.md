@@ -6,7 +6,7 @@ My personal dotfiles managed with [Dotbot](https://github.com/anishathalye/dotbo
 
 - **Shell**: zsh + fish (using `~/.profile` as single source of truth for env vars via [replay.fish](https://github.com/jorgebucaran/replay.fish))
 - **Prompt**: Starship
-- **Tools**: mise, homebrew, git, claude code
+- **Tools**: mise, homebrew, git, claude code, pi coding agent
 - **Apps**: Raycast, iTerm2, Karabiner-Elements
 
 ## Installation
@@ -47,6 +47,7 @@ Configuration is defined in `install.conf.yaml`.
 - `opencode/` → `~/.config/opencode/`
 - `claude/` → `~/.claude.json`, `~/.claude/`
 - `agents/` → `~/.agents/` (skills, lockfile)
+- `pi/` → `~/.pi/` (Pi coding agent settings and extensions)
 - `zed/` → `~/.config/zed/settings.json`
 - `gh/` → `~/.config/gh/config.yml`
 - `qmd/` → `~/.config/qmd/index.yml`

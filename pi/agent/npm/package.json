@@ -1,0 +1,15 @@
+{
+  "name": "pi-extensions",
+  "private": true,
+  "dependencies": {
+    "@ayulab/pi-rewind": "^0.4.6",
+    "@juicesharp/rpiv-ask-user-question": "^2.9.0",
+    "@juicesharp/rpiv-todo": "^2.9.0",
+    "@narumitw/pi-btw": "^0.57.0",
+    "@quintinshaw/pi-dynamic-workflows": "^3.10.1",
+    "@tian.zuo/pi-antigravity": "^0.10.0",
+    "@tintinweb/pi-subagents": "^0.19.0",
+    "pi-memory": "^0.4.2",
+    "pi-web-access": "^0.28.0"
+  }
+}

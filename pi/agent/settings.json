@@ -1,0 +1,15 @@
+{
+  "lastChangelogVersion": "0.84.4",
+  "theme": "light",
+  "packages": [
+    "npm:@tian.zuo/pi-antigravity",
+    "npm:pi-web-access",
+    "npm:@juicesharp/rpiv-ask-user-question",
+    "npm:@juicesharp/rpiv-todo",
+    "npm:@tintinweb/pi-subagents",
+    "npm:pi-memory",
+    "npm:@quintinshaw/pi-dynamic-workflows",
+    "npm:@narumitw/pi-btw",
+    "npm:@ayulab/pi-rewind"
+  ]
+}

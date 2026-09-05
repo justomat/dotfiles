@@ -7,4 +7,3 @@ alias mkdir="mkdir -p"
 alias d=docker
 alias dc="d compose"
 alias compose=dc
-alias oc=opencode

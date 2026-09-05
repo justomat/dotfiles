@@ -1,0 +1,21 @@
+# Runtime data - not tracked in git
+agent/sessions/
+agent/memory/
+agent/ayu/
+agent/skills/
+antigravity/
+
+# Secrets
+agent/auth.json
+agent/models-store.json
+
+# NPM runtime dependencies
+agent/npm/node_modules/
+agent/npm/package-lock.json
+
+# Runtime noise (caches, logs, backups)
+*.log
+*.bak
+*.tmp
+*.swp
+.DS_Store
