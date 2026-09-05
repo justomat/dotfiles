@@ -19,6 +19,10 @@ paste-cache/
 plans/
 history.jsonl
 stats-cache.json
+chrome/
+daemon/
+image-cache/
+jobs/
 
 # Secrets
 .credentials.json
@@ -28,5 +32,6 @@ stats-cache.json
 .last-update-result.json
 mcp-needs-auth-cache.json
 .statusline-usage-cache
+*-cache.json
 *.log
 *.bak

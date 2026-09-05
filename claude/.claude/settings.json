@@ -13,10 +13,11 @@
     "ask": [],
     "defaultMode": "bypassPermissions"
   },
-  "model": "opusplan",
+  "model": "opus",
   "hooks": {
     "PreToolUse": []
   },
+  "enableWorkflows": true,
   "statusLine": {
     "type": "command",
     "command": "bash /Users/ger/.claude/statusline-command.sh"
@@ -33,14 +34,20 @@
     "plugin-dev@claude-plugins-official": false,
     "expo@claude-plugins-official": false,
     "cloudflare@claude-plugins-official": true,
-    "rust-analyzer-lsp@claude-plugins-official": true
+    "rust-analyzer-lsp@claude-plugins-official": true,
+    "linear@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {},
-  "effortLevel": "high",
+  "effortLevel": "medium",
+  "tui": "fullscreen",
   "skipDangerousModePermissionPrompt": true,
   "theme": "dark-daltonized",
   "preferredNotifChannel": "iterm2",
   "autoCompactEnabled": false,
   "agentPushNotifEnabled": true,
-  "tui": "fullscreen"
+  "modelSettings": {
+    "claude-opus-5": {
+      "effortLevel": "medium"
+    }
+  }
 }
