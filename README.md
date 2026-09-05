@@ -44,7 +44,12 @@ Configuration is defined in `install.conf.yaml`.
 - `mise/` → `~/.config/mise/config.toml`
 - `karabiner/` → `~/.config/karabiner/`
 - `homebrew/` → `~/.Brewfile`
+- `opencode/` → `~/.config/opencode/`
 - `claude/` → `~/.claude.json`, `~/.claude/`
+- `agents/` → `~/.agents/` (skills, lockfile)
+- `zed/` → `~/.config/zed/settings.json`
+- `gh/` → `~/.config/gh/config.yml`
+- `qmd/` → `~/.config/qmd/index.yml`
 
 ## Plugins
 

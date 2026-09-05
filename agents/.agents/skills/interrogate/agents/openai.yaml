@@ -1,0 +1,3 @@
+interface:
+  display_name: "Interrogate"
+  short_description: "Use for \\"interrogate\\", \\"adversarial review\\", \\"multi-model review\\", \\"chall"

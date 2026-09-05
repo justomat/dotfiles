@@ -1,0 +1,3 @@
+interface:
+  display_name: "Principle Boundary Discipline"
+  short_description: "Apply when wiring validation, error handling, or framework adapters"

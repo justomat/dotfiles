@@ -47,6 +47,11 @@
       path: claude/.claude
       force: true
 
+    # Agents
+    ~/.agents:
+      path: agents/.agents
+      force: true
+
     # Zed
     ~/.config/zed/settings.json:
       path: zed/.config/zed/settings.json

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Principle Migrate Callers Then Delete Legacy Apis"
+  short_description: "Apply when introducing a new internal API while old callers still exist"

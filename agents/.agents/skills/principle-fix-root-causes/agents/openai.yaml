@@ -1,0 +1,3 @@
+interface:
+  display_name: "Principle Fix Root Causes"
+  short_description: "Apply when debugging"
