@@ -1,0 +1,12 @@
+# Ignore dynamically installed skills from skills CLI
+*
+!.gitignore
+!codebase-design
+!codebase-design/**
+!ego-browser
+!handoff
+!handoff/**
+!improve-codebase-architecture
+!improve-codebase-architecture/**
+!tdd
+!tdd/**

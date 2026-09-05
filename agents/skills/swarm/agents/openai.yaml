@@ -1,3 +1,0 @@
-interface:
-  display_name: "Swarm"
-  short_description: "Fan out N parallel workers, drain them, and return one report"

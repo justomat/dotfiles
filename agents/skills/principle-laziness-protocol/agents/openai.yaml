@@ -1,3 +1,0 @@
-interface:
-  display_name: "Principle Laziness Protocol"
-  short_description: "Apply when refactoring, evaluating diff size, or tempted to add abstractions, la"
