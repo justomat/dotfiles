@@ -1,22 +1,22 @@
 source ~/.aliases
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
 export EDITOR="zed --wait"
 export VISUAL="zed --wait"
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 export ANDROID_HOME=$HOME/Library/Android/sdk
+export NODE_OPTIONS="--max-old-space-size=16384"
 
 paths=(
-    "$HOME/.cargo/bin",
+    "$HOME/.local/bin"
+    "$HOME/.cargo/bin"
     "$HOME/.orbstack/bin"
     "$HOME/.antigravity/antigravity/bin"
-    "$ANDROID_HOME/emulator",
-    "$ANDROID_HOME/platform-tools",
+    "$ANDROID_HOME/emulator"
+    "$ANDROID_HOME/platform-tools"
 )
 PATH="$( IFS=":" ; echo "${paths[*]}" ):$PATH"
 
-export NODE_OPTIONS="--max-old-space-size=16384"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 update() {
     local prev_dir="$PWD"
@@ -33,3 +33,7 @@ update() {
 
 # Secrets (API keys, tokens) — not tracked in git
 [ -f ~/.secrets ] && . ~/.secrets
+
+
+# Added by Antigravity CLI installer
+export PATH="/Users/ger/.local/bin:$PATH"

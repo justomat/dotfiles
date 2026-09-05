@@ -2,17 +2,18 @@
 node = "lts"
 pnpm = "latest"
 bun = "latest"
-deno = "latest"
 "npm:wrangler" = "latest"
-"npm:@typescript/native-preview" = "7.0.0-dev.20260707.2"
+"npm:typescript" = "latest"
 "npm:@biznetgio/cli" = "latest"
 "npm:eas-cli" = "latest"
-"npm:opencode-ai" = "latest"
+"npm:@earendil-works/pi-coding-agent" = "latest"
 
 python = "latest"
 uv = "latest"
 
 cargo-binstall = "latest"
+go = "latest"
+"npm:@tobilu/qmd" = "latest"
 
 [settings]
 experimental = true

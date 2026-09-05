@@ -1,5 +1,8 @@
 [init]
 	defaultBranch = main
+[alias]
+	ls = status
+
 [core]
 	pager = delta
 [interactive]
