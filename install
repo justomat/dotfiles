@@ -5,6 +5,7 @@ set -e
 CONFIG="install.conf.yaml"
 DOTBOT_DIR="meta/dotbot"
 BREW_PLUGIN_DIR="meta/dotbot-brew"
+BREW_UPGRADE_PLUGIN="meta/configs/dotbot-brew-upgrade.py"
 MISE_PLUGIN="meta/configs/dotbot-mise.py"
 SKILLS_PLUGIN="meta/configs/dotbot-skills.py"
 
@@ -17,6 +18,7 @@ git submodule update --init --recursive "${BREW_PLUGIN_DIR}"
 # Run dotbot
 "${DOTBOT_DIR}/bin/dotbot" -d "${PWD}" -c "${CONFIG}" \
     --plugin-dir "${BREW_PLUGIN_DIR}" \
+    --plugin "${BREW_UPGRADE_PLUGIN}" \
     --plugin "${MISE_PLUGIN}" \
     --plugin "${SKILLS_PLUGIN}" \
     "${@}"

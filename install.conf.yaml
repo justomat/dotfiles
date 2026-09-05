@@ -52,6 +52,11 @@
       path: agents
       force: true
 
+    # Pi
+    ~/.pi:
+      path: pi
+      force: true
+
     # Zed
     ~/.config/zed/settings.json:
       path: zed/.config/zed/settings.json
@@ -70,6 +75,8 @@
 # Plugins
 - brewfile:
     - homebrew/Brewfile
+
+- brew-upgrade: true
 
 - mise:
     - install

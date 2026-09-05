@@ -17,7 +17,7 @@ To add a new dotfile: drop it under the matching repo subdir, add a `~/path: sub
 ## Commands
 
 ```bash
-./install            # init required submodules + run dotbot: link files, brew bundle, mise install
+./install            # init required submodules + run dotbot: link files, brew bundle + upgrade, mise update + install, skills
 ./install --only link # (any dotbot flag passes through after `./install`)
 ```
 
@@ -25,12 +25,14 @@ To add a new dotfile: drop it under the matching repo subdir, add a `~/path: sub
 
 ## Install pipeline (meta/)
 
-`./install` runs dotbot with three stages driven by `install.conf.yaml`:
+`./install` runs dotbot with stages driven by `install.conf.yaml`:
 1. **link** — symlinks per the `link:` block.
 2. **brewfile** (`meta/dotbot-brew`, submodule) — installs `homebrew/.Brewfile`.
-3. **mise** (`meta/configs/dotbot-mise.py`, local custom plugin) — runs `mise install` from `$HOME` to install everything in `mise/.config/mise/config.toml`.
+3. **brew-upgrade** (`meta/configs/dotbot-brew-upgrade.py`, local custom plugin) — runs `brew upgrade -y`.
+4. **mise** (`meta/configs/dotbot-mise.py`, local custom plugin) — runs `mise self-update -y`, `mise install`, and `mise up --bump` from `$HOME`.
+5. **skills** (`meta/configs/dotbot-skills.py`, local custom plugin) — installs agent skills via `pnpx skills add`.
 
-`meta/dotbot` and `meta/dotbot-brew` are git submodules (`./install` initializes them). The mise plugin is a local file, not a submodule.
+`meta/dotbot` and `meta/dotbot-brew` are git submodules (`./install` initializes them). The brew-upgrade, mise, and skills plugins are local files in `meta/configs/`, not submodules.
 
 ## Shell environment: single source of truth
 
@@ -43,3 +45,7 @@ So put environment changes in `shell/.profile`, not in shell-specific files. Sec
 ## The claude/ directory
 
 The whole `~/.claude` is force-symlinked to `claude/.claude`. `claude/.claude/.gitignore` is what separates **tracked config** (`settings.json`, `CLAUDE.md`, `commands/`, `skills/`, `rules/`, statusline scripts) from **untracked runtime state** (`projects/`, `sessions/`, `history.jsonl`, `cache/`, `plugins/`, etc.). When adding new Claude config, confirm it isn't caught by that ignore list, or it won't be committed.
+
+## The pi/ directory
+
+The entire `~/.pi` directory is force-symlinked to `pi`. `pi/.gitignore` separates **tracked configuration** (`agent/settings.json`, `agent/trust.json`, `agent/npm/package.json`, `agent/npm/.gitignore`) from **untracked runtime data and secrets** (`agent/sessions/`, `agent/memory/`, `agent/ayu/`, `agent/skills/`, `antigravity/`, `agent/auth.json`, `agent/models-store.json`, `agent/npm/node_modules/`, `agent/npm/package-lock.json`). Global skills are automatically linked into `~/.pi/agent/skills/` by `dotbot-skills`.
