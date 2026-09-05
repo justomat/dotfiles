@@ -49,7 +49,7 @@
 
     # Agents
     ~/.agents:
-      path: agents/.agents
+      path: agents
       force: true
 
     # Zed
